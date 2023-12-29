@@ -4,7 +4,7 @@ public class ReviewRequest {
 
     private Long userId;
     private Long productId;
-    private int rating;
+    private double rating;
     private String comment;
 
     // Constructors, getters, and setters
@@ -12,7 +12,7 @@ public class ReviewRequest {
     public ReviewRequest() {
     }
 
-    public ReviewRequest(Long userId, Long productId, int rating, String comment) {
+    public ReviewRequest(Long userId, Long productId, double rating, String comment) {
         this.userId = userId;
         this.productId = productId;
         this.rating = rating;
@@ -21,7 +21,11 @@ public class ReviewRequest {
 
     // Getters and setters (you can generate these using your IDE or write them manually)
 
-    public Long getUserId() {
+   
+
+	
+
+	public Long getUserId() {
         return userId;
     }
 
@@ -37,7 +41,7 @@ public class ReviewRequest {
         this.productId = productId;
     }
 
-    public int getRating() {
+    public double getRating() {
         return rating;
     }
 

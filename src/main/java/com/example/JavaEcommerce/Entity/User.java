@@ -30,7 +30,14 @@ public class User {
 
     // Getters and Setters
 
-    public Long getId() {
+    public User(long id, String username, String email) {
+		// TODO Auto-generated constructor stub
+    	this.id = id;
+    	this.username = username;
+        this.email = email;
+	}
+
+	public Long getId() {
         return id;
     }
 

@@ -32,7 +32,14 @@ public class Product {
         // Initialize additional fields as needed
     }
 
-    // Getters and Setters
+    public Product(long l, String string, double d) {
+		// TODO Auto-generated constructor stub
+    	this.id = l;
+    	this.name = string;
+        this.price = d;
+	}
+
+	// Getters and Setters
     public Long getId() {
         return id;
     }

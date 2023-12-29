@@ -41,7 +41,15 @@ public class Order {
         // Initialize additional fields as needed
     }
 
-    // Getters and Setters
+    public Order(Long id, User user, String status, Date orderDate) {
+    	this.id = id;
+        this.user = user;
+        this.status = status;
+        this.orderDate = orderDate;
+        // Initialize additional fields as needed
+    }
+
+	// Getters and Setters
     public Long getId() {
         return id;
     }

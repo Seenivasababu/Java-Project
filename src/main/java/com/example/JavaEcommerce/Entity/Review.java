@@ -26,7 +26,7 @@ public class Review {
     private Product product;
 
     @Column(nullable = false)
-    private int rating;
+    private double rating;
 
     @Column(nullable = true)
     private String comment;
@@ -35,14 +35,22 @@ public class Review {
     public Review() {
     }
 
-    public Review(User user, Product product, int rating, String comment) {
+    public Review(User user, Product product, double rating, String comment) {
         this.user = user;
         this.product = product;
         this.rating = rating;
         this.comment = comment;
     }
 
-    // Getters and Setters
+    public Review(Long id,User user, Product product, double rating, String comment) {
+    	this.id = id;
+        this.user = user;
+        this.product = product;
+        this.rating = rating;
+        this.comment = comment;
+    }
+
+	// Getters and Setters
     public Long getId() {
         return id;
     }
@@ -67,12 +75,12 @@ public class Review {
         this.product = product;
     }
 
-    public int getRating() {
+    public double getRating() {
         return rating;
     }
 
-    public void setRating(int rating) {
-        this.rating = rating;
+    public void setRating(double d) {
+        this.rating = d;
     }
 
     public String getComment() {
